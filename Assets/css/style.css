@@ -1,0 +1,229 @@
+:root {
+  --lightblue: #413F3D;
+  --light: #fff;
+  --lightorange: #B1A6A4;
+  --verylightgreen: #697184;
+  --backgroundcolor: #F2F1EF;
+}
+body {
+  background-color: var(--backgroundcolor);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  flex-direction: column;
+}
+header {
+  background-color:var(--backgroundcolor);
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+.main-body {
+  display: flex;
+  flex: 1;
+}
+.about {
+  display: flex;
+  background-color: var(--backgroundcolor);
+  justify-content: center;
+}
+.my-skills {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 20%;
+  align-items: center;
+}
+
+header h1 {
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.name {
+  margin: 0px 10%;
+}
+
+.mypicture {
+  padding: 5px;
+  margin: 0px 100px;
+}
+footer a,
+.main a {
+  color: var(--lightblue);
+  text-decoration: none;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+header img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+.skills {
+  display: block;
+  background-color: var(--lightblue);
+  float: left;
+  width: 10%;
+}
+.aside-icons h3 {
+  text-align: center;
+}
+.aside-icons img {
+  display: block;
+  margin: 10px auto;
+}
+.aside-icons p {
+  display: block;
+  margin: 10px 20px;
+}
+.skills-section {
+  background-color:var(--verylightgreen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  place-content: center;
+  background-color: var(--lightblue);
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  margin: 0.5em;
+  transition: width 1s
+}
+
+.card1 h1 {
+  position: flex;
+  place-self: center;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+    background-color: var(--lightorange);
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+ul {
+    display: flex;
+    font-size: 150%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+li {
+  margin: 0.5%;
+  color: var(--light);
+}
+aside {
+  display: flex;
+  width: 24%;
+  background-color: var(--backgroundcolor);
+  justify-content: space-between;
+  /* display: block; */
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: auto;
+  /* /* display: contents; */
+}
+aside h1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightorange);
+}
+aside p {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+@media screen and (max-width: 1600px) {
+  .skills-section {
+    display: block;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    background: #772014;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+  .main {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-body aside {
+    background-color: #8ac4ff;
+    order: 2;
+    width: 100%;
+  }
+  .main-body {
+    display: block;
+  }
+}
+/* The user's cursor is positioned over the element */
+.about a:hover {
+  background-color: #772014;
+  color: #fff;
+  position: relative;
+  bottom: 10px;
+}
+.about ul {
+ background-color: var(--lightorange);
+}
+
+/* The user is actively pressing down on the element */
+.about a,
+footer a:active {
+  font-size: 90%;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+.about a,
+footer a:focus {
+  outline: none;
+  border-color: #8ac4ff;
+}
+.mypicture:hover {
+  position: relative;
+  bottom: 10px;
+}
+.card1:hover {
+    /* background-color: #772014;
+    color: #fff;
+    position: relative;
+    bottom: 10px;} */
+    width:250px;
+    height:250px;
+}
